@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OA Joyería | Elegancia que permanece</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         BARRA SUPERIOR
+    ========================== -->
+
+    <div class="barra-superior">
+        Envío gratis en compras desde Q350
+    </div>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <div class="header-contenido">
+
+            <a href="#inicio" class="logo">
+                <span>OA</span>
+                <small>JOYERÍA</small>
+            </a>
+
+
+            <nav class="nav">
+
+                <a href="#inicio">Inicio</a>
+
+                <a href="#productos">Productos</a>
+
+                <a href="#categorias">Categorías</a>
+
+                <a href="#nosotros">Nosotros</a>
+
+                <a href="#contacto">Contacto</a>
+
+                <a href="#carrito" class="nav-carrito">
+                    Carrito
+                    <span id="contador-carrito">0</span>
+                </a>
+
+            </nav>
+
+
+            <button
+                class="menu-movil"
+                type="button"
+                onclick="document.querySelector('.nav').classList.toggle('activo')"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <main>
+
+        <section id="inicio" class="hero">
+
+            <div class="hero-contenido">
+
+                <p class="hero-etiqueta">
+                    OA JOYERÍA
+                </p>
+
+                <h1>
+                    Elegancia que
+                    <span>permanece</span>
+                </h1>
+
+                <p class="hero-texto">
+                    Descubre piezas cuidadosamente seleccionadas
+                    para acompañar tus momentos más especiales.
+                </p>
+
+                <a href="#productos" class="boton-principal">
+                    VER COLECCIÓN
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             INTRODUCCIÓN
+        ========================== -->
+
+        <section class="introduccion">
+
+            <p class="etiqueta-seccion">
+                DESCUBRE OA
+            </p>
+
+            <h2>
+                Joyas para cada momento
+            </h2>
+
+            <p>
+                Diseños que combinan elegancia, sencillez y
+                personalidad para convertirse en parte de tu historia.
+            </p>
+
+        </section>
+
+
+
+        <!-- =========================
+             CATEGORÍAS
+        ========================== -->
+
+        <section id="categorias" class="seccion categorias">
+
+            <div class="encabezado-seccion">
+
+                <div>
+                    <p class="etiqueta-seccion">
+                        EXPLORA
+                    </p>
+
+                    <h2>
+                        Compra por categoría
+                    </h2>
+                </div>
+
+            </div>
+
+
+            <div class="grid-categorias">
+
+                <a href="#productos" class="categoria-card categoria-grande">
+                    <div>
+                        <span>01</span>
+                        <h3>Anillos</h3>
+                        <p>Descubrir colección</p>
+                    </div>
+                </a>
+
+
+                <a href="#productos" class="categoria-card">
+                    <div>
+                        <span>02</span>
+                        <h3>Collares</h3>
+                        <p>Descubrir colección</p>
+                    </div>
+                </a>
+
+
+                <a href="#productos" class="categoria-card">
+                    <div>
+                        <span>03</span>
+                        <h3>Pulseras</h3>
+                        <p>Descubrir colección</p>
+                    </div>
+                </a>
+
+
+                <a href="#productos" class="categoria-card">
+                    <div>
+                        <span>04</span>
+                        <h3>Aretes</h3>
+                        <p>Próximamente</p>
+                    </div>
+                </a>
+
+
+                <a href="#productos" class="categoria-card">
+                    <div>
+                        <span>05</span>
+                        <h3>Relojes</h3>
+                        <p>Descubrir colección</p>
+                    </div>
+                </a>
+
+
+                <a href="#productos" class="categoria-card">
+                    <div>
+                        <span>06</span>
+                        <h3>Tobilleras</h3>
+                        <p>Descubrir colección</p>
+                    </div>
+                </a>
+
+
+                <a href="#productos" class="categoria-card">
+                    <div>
+                        <span>07</span>
+                        <h3>Dijes</h3>
+                        <p>Próximamente</p>
+                    </div>
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             PRODUCTOS
+        ========================== -->
+
+        <section id="productos" class="seccion productos">
+
+            <div class="encabezado-seccion">
+
+                <div>
+
+                    <p class="etiqueta-seccion">
+                        NUESTRA SELECCIÓN
+                    </p>
+
+                    <h2>
+                        Piezas destacadas
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="grid-productos">
+
+
+                <!-- ANILLO -->
+
+                <article class="producto-card">
+
+                    <div class="producto-imagen">
+
+                        <img
+                            src="imagenes/anillo1.png"
+                            alt="Anillo Elegance"
+                        >
+
+                        <span class="producto-tag">
+                            Destacado
+                        </span>
+
+                    </div>
+
+                    <div class="producto-info">
+
+                        <p class="producto-categoria">
+                            ANILLOS
+                        </p>
+
+                        <h3>
+                            Anillo Elegance
+                        </h3>
+
+                        <p class="precio">
+                            Q250.00
+                        </p>
+
+                        <button
+                            type="button"
+                            class="boton-producto"
+                            onclick="agregarCarrito('Anillo Elegance', 250)"
+                        >
+                            AGREGAR AL CARRITO
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- COLLAR -->
+
+                <article class="producto-card">
+
+                    <div class="producto-imagen">
+
+                        <img
+                            src="imagenes/collar1.png"
+                            alt="Collar Aurora"
+                        >
+
+                    </div>
+
+                    <div class="producto-info">
+
+                        <p class="producto-categoria">
+                            COLLARES
+                        </p>
+
+                        <h3>
+                            Collar Aurora
+                        </h3>
+
+                        <p class="precio">
+                            Q325.00
+                        </p>
+
+                        <button
+                            type="button"
+                            class="boton-producto"
+                            onclick="agregarCarrito('Collar Aurora', 325)"
+                        >
+                            AGREGAR AL CARRITO
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PULSERA -->
+
+                <article class="producto-card">
+
+                    <div class="producto-imagen">
+
+                        <img
+                            src="imagenes/pulsera1.png"
+                            alt="Pulsera Olivia"
+                        >
+
+                    </div>
+
+                    <div class="producto-info">
+
+                        <p class="producto-categoria">
+                            PULSERAS
+                        </p>
+
+                        <h3>
+                            Pulsera Olivia
+                        </h3>
+
+                        <p class="precio">
+                            Q275.00
+                        </p>
+
+                        <button
+                            type="button"
+                            class="boton-producto"
+                            onclick="agregarCarrito('Pulsera Olivia', 275)"
+                        >
+                            AGREGAR AL CARRITO
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ARETES -->
+
+                <article class="producto-card producto-proximamente">
+
+                    <div class="producto-imagen">
+
+                        <div class="proximamente-icono">
+                            OA
+                        </div>
+
+                    </div>
+
+                    <div class="producto-info">
+
+                        <p class="producto-categoria">
+                            ARETES
+                        </p>
+
+                        <h3>
+                            Nuevos diseños
+                        </h3>
+
+                        <p class="descripcion-producto">
+                            Próximamente nuevos diseños.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- RELOJ 1 -->
+
+                <article class="producto-card">
+
+                    <div class="producto-imagen">
+
+                        <img
+                            src="imagenes/reloj1.png"
+                            alt="Reloj Elegance"
+                        >
+
+                    </div>
+
+                    <div class="producto-info">
+
+                        <p class="producto-categoria">
+                            RELOJES
+                        </p>
+
+                        <h3>
+                            Reloj Elegance
+                        </h3>
+
+                        <p class="precio">
+                            Q450.00
+                        </p>
+
+                        <button
+                            type="button"
+                            class="boton-producto"
+                            onclick="agregarCarrito('Reloj Elegance', 450)"
+                        >
+                            AGREGAR AL CARRITO
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- RELOJ 2 -->
+
+                <article class="producto-card">
+
+                    <div class="producto-imagen">
+
+                        <img
+                            src="imagenes/reloj2.png"
+                            alt="Reloj Classic"
+                        >
+
+                    </div>
+
+                    <div class="producto-info">
+
+                        <p class="producto-categoria">
+                            RELOJES
+                        </p>
+
+                        <h3>
+                            Reloj Classic
+                        </h3>
+
+                        <p class="precio">
+                            Q450.00
+                        </p>
+
+                        <button
+                            type="button"
+                            class="boton-producto"
+                            onclick="agregarCarrito('Reloj Classic', 450)"
+                        >
+                            AGREGAR AL CARRITO
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- RELOJ 3 -->
+
+                <article class="producto-card">
+
+                    <div class="producto-imagen">
+
+                        <img
+                            src="imagenes/reloj3.png"
+                            alt="Reloj Luxury"
+                        >
+
+                    </div>
+
+                    <div class="producto-info">
+
+                        <p class="producto-categoria">
+                            RELOJES
+                        </p>
+
+                        <h3>
+                            Reloj Luxury
+                        </h3>
+
+                        <p class="precio">
+                            Q450.00
+                        </p>
+
+                        <button
+                            type="button"
+                            class="boton-producto"
+                            onclick="agregarCarrito('Reloj Luxury', 450)"
+                        >
+                            AGREGAR AL CARRITO
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- TOBILLERA 1 -->
+
+                <article class="producto-card">
+
+                    <div class="producto-imagen">
+
+                        <img
+                            src="imagenes/tobillera1.png"
+                            alt="Tobillera Luna"
+                        >
+
+                    </div>
+
+                    <div class="producto-info">
+
+                        <p class="producto-categoria">
+                            TOBILLERAS
+                        </p>
+
+                        <h3>
+                            Tobillera Luna
+                        </h3>
+
+                        <p class="precio">
+                            Q175.00
+                        </p>
+
+                        <button
+                            type="button"
+                            class="boton-producto"
+                            onclick="agregarCarrito('Tobillera Luna', 175)"
+                        >
+                            AGREGAR AL CARRITO
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- TOBILLERA 2 -->
+
+                <article class="producto-card">
+
+                    <div class="producto-imagen">
+
+                        <img
+                            src="imagenes/tobillera2.png"
+                            alt="Tobillera Estrella"
+                        >
+
+                    </div>
+
+                    <div class="producto-info">
+
+                        <p class="producto-categoria">
+                            TOBILLERAS
+                        </p>
+
+                        <h3>
+                            Tobillera Estrella
+                        </h3>
+
+                        <p class="precio">
+                            Q175.00
+                        </p>
+
+                        <button
+                            type="button"
+                            class="boton-producto"
+                            onclick="agregarCarrito('Tobillera Estrella', 175)"
+                        >
+                            AGREGAR AL CARRITO
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- TOBILLERA 3 -->
+
+                <article class="producto-card">
+
+                    <div class="producto-imagen">
+
+                        <img
+                            src="imagenes/tobillera3.png"
+                            alt="Tobillera Grace"
+                        >
+
+                    </div>
+
+                    <div class="producto-info">
+
+                        <p class="producto-categoria">
+                            TOBILLERAS
+                        </p>
+
+                        <h3>
+                            Tobillera Grace
+                        </h3>
+
+                        <p class="precio">
+                            Q175.00
+                        </p>
+
+                        <button
+                            type="button"
+                            class="boton-producto"
+                            onclick="agregarCarrito('Tobillera Grace', 175)"
+                        >
+                            AGREGAR AL CARRITO
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- DIJES -->
+
+                <article class="producto-card producto-proximamente">
+
+                    <div class="producto-imagen">
+
+                        <div class="proximamente-icono">
+                            OA
+                        </div>
+
+                    </div>
+
+                    <div class="producto-info">
+
+                        <p class="producto-categoria">
+                            DIJES
+                        </p>
+
+                        <h3>
+                            Nuevos diseños
+                        </h3>
+
+                        <p class="descripcion-producto">
+                            Próximamente nuevos diseños.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             BANNER
+        ========================== -->
+
+        <section class="banner-elegancia">
+
+            <div>
+
+                <p>
+                    UNA PIEZA.
+                </p>
+
+                <h2>
+                    Una historia.
+                </h2>
+
+                <a href="#productos" class="boton-claro">
+                    DESCUBRIR
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             NOSOTROS
+        ========================== -->
+
+        <section id="nosotros" class="seccion nosotros">
+
+            <div class="nosotros-grid">
+
+                <div class="nosotros-titulo">
+
+                    <p class="etiqueta-seccion">
+                        SOBRE NOSOTROS
+                    </p>
+
+                    <h2>
+                        Hecho para
+                        acompañarte.
+                    </h2>
+
+                </div>
+
+
+                <div class="nosotros-texto">
+
+                    <p>
+                        En OA Joyería creemos que una joya es mucho
+                        más que un accesorio.
+                    </p>
+
+                    <p>
+                        Es una forma de expresar quién eres,
+                        recordar momentos especiales y llevar
+                        contigo aquello que te representa.
+                    </p>
+
+                    <p>
+                        Seleccionamos cada pieza pensando en
+                        ofrecer diseños elegantes, versátiles
+                        y especiales para cada ocasión.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CARRITO
+        ========================== -->
+
+        <section id="carrito" class="seccion carrito-seccion">
+
+            <div class="encabezado-seccion">
+
+                <div>
+
+                    <p class="etiqueta-seccion">
+                        TU SELECCIÓN
+                    </p>
+
+                    <h2>
+                        Carrito
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="carrito-layout">
+
+                <div
+                    id="lista-carrito"
+                    class="lista-carrito"
+                >
+                </div>
+
+
+                <aside class="resumen-carrito">
+
+                    <p class="resumen-etiqueta">
+                        RESUMEN
+                    </p>
+
+                    <h3>
+                        Tu pedido
+                    </h3>
+
+                    <div class="total-linea">
+
+                        <span>
+                            Total
+                        </span>
+
+                        <strong id="total-carrito">
+                            Q0.00
+                        </strong>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="boton-checkout"
+                        onclick="abrirCheckout()"
+                    >
+                        FINALIZAR COMPRA
+                    </button>
+
+                    <p class="envio-info">
+                        Envío gratis en compras desde Q350.
+                    </p>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CONTACTO
+        ========================== -->
+
+        <section id="contacto" class="contacto">
+
+            <div class="contacto-contenido">
+
+                <p class="etiqueta-seccion">
+                    CONTACTO
+                </p>
+
+                <h2>
+                    Estamos aquí para ayudarte.
+                </h2>
+
+                <p>
+                    ¿Tienes alguna pregunta sobre nuestros productos
+                    o tu pedido?
+                </p>
+
+                <a
+                    href="https://www.instagram.com/jewerlsoa/"
+                    target="_blank"
+                    class="boton-principal"
+                >
+                    ESCRÍBENOS EN INSTAGRAM
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         NOTIFICACIÓN
+    ========================== -->
+
+    <div
+        id="notificacion-carrito"
+        class="notificacion"
+    >
+
+        <span id="mensaje-notificacion">
+            Producto agregado al carrito
+        </span>
+
+        <a
+            href="#carrito"
+            id="boton-ir-carrito"
+            class="boton-ir-carrito"
+        >
+            Ir al carrito
+        </a>
+
+    </div>
+
+
+
+    <!-- =========================
+         CHECKOUT
+    ========================== -->
+
+    <div
+        id="ventana-checkout"
+        class="modal-checkout"
+    >
+
+        <div class="checkout-contenido">
+
+            <button
+                type="button"
+                class="cerrar-checkout"
+                onclick="cerrarCheckout()"
+            >
+                ×
+            </button>
+
+
+            <div class="checkout-header">
+
+                <p class="etiqueta-seccion">
+                    OA JOYERÍA
+                </p>
+
+                <h2>
+                    Finalizar compra
+                </h2>
+
+                <p>
+                    Completa tus datos para preparar tu pedido.
+                </p>
+
+            </div>
+
+
+
+            <div class="checkout-grid">
+
+
+                <!-- DATOS -->
+
+                <div class="checkout-formulario">
+
+                    <h3>
+                        Información de contacto
+                    </h3>
+
+
+                    <label for="nombre">
+                        Nombre completo
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        placeholder="Tu nombre"
+                    >
+
+
+                    <label for="telefono">
+                        Teléfono
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="telefono"
+                        placeholder="Tu número de teléfono"
+                    >
+
+
+                    <label for="instagram">
+                        Instagram
+                    </label>
+
+                    <input
+                        type="text"
+                        id="instagram"
+                        placeholder="@tuusuario"
+                    >
+
+
+                    <h3 class="titulo-formulario">
+                        Dirección de entrega
+                    </h3>
+
+
+                    <label for="direccion">
+                        Dirección
+                    </label>
+
+                    <input
+                        type="text"
+                        id="direccion"
+                        placeholder="Dirección de entrega"
+                    >
+
+
+                    <label for="referencia">
+                        Referencia
+                    </label>
+
+                    <input
+                        type="text"
+                        id="referencia"
+                        placeholder="Punto de referencia"
+                    >
+
+
+                    <label for="ciudad">
+                        Ciudad
+                    </label>
+
+                    <input
+                        type="text"
+                        id="ciudad"
+                        placeholder="Ciudad"
+                    >
+
+
+                    <label for="departamento">
+                        Departamento
+                    </label>
+
+                    <input
+                        type="text"
+                        id="departamento"
+                        placeholder="Departamento"
+                    >
+
+
+                    <h3 class="titulo-formulario">
+                        Método de pago
+                    </h3>
+
+
+                    <div class="metodos-pago">
+
+                        <label class="metodo-pago">
+
+                            <input
+                                type="radio"
+                                name="pago"
+                                value="Efectivo"
+                            >
+
+                            <span>
+                                Efectivo
+                            </span>
+
+                        </label>
+
+
+                        <label class="metodo-pago">
+
+                            <input
+                                type="radio"
+                                name="pago"
+                                value="Transferencia"
+                            >
+
+                            <span>
+                                Transferencia
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- RESUMEN -->
+
+                <div class="checkout-resumen">
+
+                    <p class="resumen-etiqueta">
+                        TU PEDIDO
+                    </p>
+
+                    <h3>
+                        Resumen
+                    </h3>
+
+
+                    <div
+                        id="resumen-checkout"
+                        class="resumen-checkout"
+                    >
+                    </div>
+
+
+                    <div class="checkout-total">
+
+                        <span>
+                            Total
+                        </span>
+
+                        <strong id="total-checkout">
+                            Q0.00
+                        </strong>
+
+                    </div>
+
+
+                    <p class="nota-checkout">
+                        Envío gratis en compras desde Q350.
+                        En compras menores a Q350,
+                        el envío tiene un costo de Q30.
+                    </p>
+
+
+                    <button
+                        type="button"
+                        class="boton-finalizar"
+                        onclick="finalizarPedido()"
+                    >
+                        Enviar pedido
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-grid">
+
+            <div class="footer-marca">
+
+                <a href="#inicio" class="logo logo-footer">
+                    <span>OA</span>
+                    <small>JOYERÍA</small>
+                </a>
+
+                <p>
+                    Elegancia que permanece.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Explora
+                </h4>
+
+                <a href="#inicio">Inicio</a>
+
+                <a href="#productos">Productos</a>
+
+                <a href="#categorias">Categorías</a>
+
+                <a href="#nosotros">Nosotros</a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Ayuda
+                </h4>
+
+                <a href="#contacto">Contacto</a>
+
+                <a href="#carrito">Carrito</a>
+
+                <a
+                    href="https://www.instagram.com/jewerlsoa/"
+                    target="_blank"
+                >
+                    Instagram
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    OA Joyería
+                </h4>
+
+                <p>
+                    Piezas seleccionadas para
+                    acompañar tus momentos especiales.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 OA Joyería
+            </span>
+
+            <span>
+                Todos los derechos reservados.
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
